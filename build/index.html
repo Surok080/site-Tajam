@@ -10,8 +10,10 @@
 	<link rel="stylesheet" href="./css/bootstrap.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
-		href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+		href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Roboto:wght@300;900&display=swap"
 		rel="stylesheet">
 
 	<link rel="icon" href="./images/favicon.ico" type="image/x-icon">
@@ -19,22 +21,205 @@
 
 	<link rel="stylesheet" href="./css/style.css">
 
-	<title>Krivov_profile</title>
+	<title>Tajam</title>
 </head>
 
 <body>
+	<!-- header -->
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<div class="header__logo">
+					<img src="./images/layers.png" alt="">
+				</div>
+				<nav class="nav">
+					<a href="#" class="nav__link">HOME</a>
+					<a href="#" class="nav__link">ABOUT</a>
+					<a href="#" class="nav__link">EXPERTISE</a>
+					<a href="#" class="nav__link">TEAMS</a>
+					<a href="#" class="nav__link">WORKS</a>
+					<a href="#" class="nav__link">PEOPLE SAY</a>
+					<a href="#" class="nav__link">CONTACT</a>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<!-- intro -->
+	<div class="intro">
+		<div class="container">
+			<div class="intro__inner">
+				<h1 class="intro__title">We Are Awesome Creative Agency</h1>
+			</div>
+			<div class="intro__line"></div>
+			<h2 class="intro__subtitle">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor
+				aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh
+				id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</h2>
+			<a href="#" class="button">LEARN MORE</a>
+			<!-- <button class="button" type="button">LEARN MORE</button> -->
+		</div>
+	</div>
 
+	<!-- story -->
+	<div class="story">
+		<div class="container">
+			<div class="row">
+				<div class="story__logo col-lg-5 col-md-7">
+					<img src="./images/story.png" alt="">
+				</div>
+
+				<div class="story__description col-lg-7 col-md-7">
+					<div class="story__title">OUR STORY</div>
+					<div class="story__text">
+						<p> This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
+							sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+							Duis
+							sed odio sit amet nibh vulputate cursus</p>
+
+						Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris
+						vitae
+						erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia
+						nostra,
+						per
+						inceptos himenaeos.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- videoHistory -->
+	<div class="videoHistory">
+		<div class="container">
+
+			<!-- Modal -->
+			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-lg modal-dialog-centered">
+					<div class="modal-content">
+
+						<div class="modal-body">
+							<iframe class="video" src="https://www.youtube.com/embed/KvUgaHTNit4" title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<img src="./images/play.png" alt="#" data-toggle="modal" data-target="#exampleModal"
+				class="videoHistory__play">
+
+			<div class="videoHistory__title">WATCH OUR STORY</div>
+		</div>
+	</div>
 
 
 
 	<script src="./js/jquery-3.6.0.min.js"></script>
 	<script src="./js/bootstrap.js"></script>
 
-	<script src="./js/experience.js"></script>
-	<script src="./js/data.js"></script>
+
 	<script src="./js/app.js"></script>
 
 
 </body>
 
 </html>
+
+
+
+
+
+
+<!-- 
+<div class="modal fade" id="video-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		 <div class="modal-content">
+			  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			  <div class="ratio ratio-16x9">
+					<div id="player"></div>
+			  </div>
+		 </div>
+	</div>
+</div> -->
+
+<!-- <style>
+	#video-modal {
+		 .btn-close {
+			  position: absolute;
+			  right: initial;
+			  left: 100%;
+			  bottom: 100%;
+			  top: initial;
+			  font-size: 20px;
+			  cursor: pointer;
+			  z-index: 10;
+			  filter: invert(1);
+			  opacity: 1;
+		 }
+
+		 .modal-dialog {
+			  max-width: 80%;
+			  margin-left: auto;
+			  margin-right: auto;
+
+			  .modal-content {
+					background: none;
+					padding: 0;
+					box-shadow: none;
+					border-radius: 0;
+					border: none;
+			  }
+		 }
+	}
+</style> -->
+
+<!-- <script>
+	var tag = document.createElement('script');
+
+	tag.src = "https://www.youtube.com/iframe_api";
+	var firstScriptTag = document.getElementsByTagName('script')[0];
+	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+	var player;
+
+
+
+	$(document).ready(function() {
+		 $('#video-modal').on('shown.bs.modal', function(e) {
+			  let button = $(e.relatedTarget),
+					video = button.data('video');
+
+			  if (player) {
+					if (player.playerInfo.videoData.video_id == video) {
+						 player.playVideo();
+					} else {
+						 player.loadVideoById(video);
+					}
+
+			  } else {
+					player = new YT.Player('player', {
+
+						 playerVars: {
+							  'controls': 0,
+							  'showinfo': 0,
+							  'rel': 0,
+							  'autoplay': 0,
+							  'playsinline': 1
+						 },
+						 videoId: video,
+						 events: {
+							  'onReady': onPlayerReady,
+						 }
+					});
+			  }
+		 });
+
+		 $('#video-modal').on('hidden.bs.modal', function() {
+			  player.pauseVideo();
+		 });
+
+		 function onPlayerReady() {
+			  player.playVideo();
+		 }
+	});
+</script> -->
