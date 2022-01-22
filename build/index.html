@@ -21,32 +21,36 @@
 
 	<link rel="stylesheet" href="./css/style.css">
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
 	<title>Tajam</title>
 </head>
 
 <body>
 
 	<!-- header -->
-	<header class="header">
+	<header class="header" id="header">
 		<div class="container">
 			<div class="header__inner">
 				<div class="header__logo">
 					<img src="./images/layers.png" alt="">
 				</div>
-				<nav class="nav">
+				<nav class="nav" id="nav">
 					<a href="#" class="nav__link">HOME</a>
-					<a href="#" class="nav__link">ABOUT</a>
-					<a href="#" class="nav__link">EXPERTISE</a>
-					<a href="#" class="nav__link">TEAMS</a>
-					<a href="#" class="nav__link">WORKS</a>
-					<a href="#" class="nav__link">PEOPLE SAY</a>
-					<a href="#" class="nav__link">CONTACT</a>
+					<a href="" data-scroll="#videoHistory" class="nav__link">ABOUT</a>
+					<a href="" data-scroll="#expertise" class="nav__link">EXPERTISE</a>
+					<a href="" data-scroll="#team" class="nav__link">TEAMS</a>
+					<a href="" data-scroll="#works" class="nav__link">WORKS</a>
+					<a href="" data-scroll="#reviews" class="nav__link">PEOPLE SAY</a>
+					<a href="" data-scroll="#contact" class="nav__link">CONTACT</a>
 				</nav>
 			</div>
 		</div>
-	</header>
+	</header><!-- /header -->
+
 	<!-- intro -->
-	<div class="intro">
+	<div class="intro" id="intro">
 		<div class="container">
 			<div class="intro__inner">
 				<h1 class="intro__title">We Are Awesome Creative Agency</h1>
@@ -58,10 +62,10 @@
 			<a href="#" class="button">LEARN MORE</a>
 			<!-- <button class="button" type="button">LEARN MORE</button> -->
 		</div>
-	</div>
+	</div><!-- /intro -->
 
 	<!-- story -->
-	<div class="story">
+	<section class="story">
 		<div class="container">
 			<div class="row">
 				<div class="story__logo col-lg-5">
@@ -86,9 +90,10 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</section><!-- /story -->
+
 	<!-- videoHistory -->
-	<div class="videoHistory">
+	<section class="videoHistory" id="videoHistory">
 		<div class="container">
 			<img src="./images/play.png" alt="#" data-toggle="modal" data-target="#exampleModal"
 				class="videoHistory__play">
@@ -112,10 +117,10 @@
 			</div>
 
 		</div>
-	</div>
+	</section><!-- /videoHistory -->
 
 	<!-- expertise -->
-	<div class="expertise">
+	<section class="expertise" id="expertise">
 		<div class="container">
 			<div class="title color-title-dark">EXPERTISE</div>
 			<div class="subtitle">Lorem ipsum dolor sit amet proin gravida nibh vel velit</div>
@@ -170,10 +175,10 @@
 
 			</div>
 		</div>
-	</div>
+	</section><!-- /expertise -->
 
 	<!-- team -->
-	<div class="team">
+	<section class="team" id="team">
 		<div class="container">
 			<div class="title color-title-white">MEET OUR AMAZING TEAM</div>
 			<div class="subtitle color-title-white">Lorem ipsum dolor sit amet proin gravida nibh vel velit</div>
@@ -223,10 +228,10 @@
 			<div class="team__joinText">Become part of our dream team, let's join us !</div>
 			<a href="#" class="button">WE ARE HIRING</a>
 		</div>
-	</div>
+	</section><!-- /team -->
 
 	<!-- works -->
-	<div class="works">
+	<section class="works" id="works">
 		<div class="works__info">
 			<div class="title color-title-dark text-left">OUR WORKS</div>
 			<div class="works__project text-right">See All Project in dribbble</div>
@@ -235,6 +240,7 @@
 		<div class="works__items">
 			<div class="works__item">
 				<img class="works__img" src="./images/works_2.jpg" alt="">
+				<div class="works__info">More info</div>
 			</div>
 
 			<div class="works__item">
@@ -282,11 +288,110 @@
 			</div>
 		</div>
 		<div class="button">LOAD MORE</div>
-	</div>
+	</section><!-- /works -->
 
+	<!-- reviews -->
+	<section class="reviews" id="reviews">
+		<div class="container">
+			<div class="reviews__head">“</div>
+			<div class="reviews__item i1 focus-item">
+				<div class="reviews__text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor
+					aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
+					nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+					Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in
+					elit.</div>
+				<div class="reviews__name">JANE GALADRIEL</div>
+				<div class="reviews__position">CEO TENGKUREP</div>
+			</div>
+			<div class="reviews__item i1">
+				<div class="reviews__text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor
+					aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
+					nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+					Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in
+					elit.</div>
+				<div class="reviews__name">JANE GALADRIEL</div>
+				<div class="reviews__position">CEO TENGKUREP</div>
+			</div>
 
+			<img src="./images/reviews-1.png" alt="" class="reviews__foto f1">
+			<img src="./images/reviews-2.png" alt="" class="reviews__foto f2">
+			<img src="./images/reviews-3.png" alt="" class="reviews__foto f3 focus-foto">
+			<img src="./images/reviews-4.png" alt="" class="reviews__foto f4">
+			<img src="./images/reviews-5.png" alt="" class="reviews__foto f5">
+		</div>
+	</section><!-- /reviews -->
 
+	<!-- contact -->
+	<section class="contact" id="contact">
+		<div class="container">
+			<div class="title color-title-dark">GIVE US A GOOD NEWS</div>
+			<input type="text" placeholder="Name" class="contact__input">
+			<input type="text" placeholder="Email" class="contact__input">
+			<input type="text" placeholder="Subject" class="contact__input">
+			<textarea placeholder="Your Massage" class="contact__message"></textarea>
+			<div class="button submit">SUBMIT</div>
+		</div>
+	</section><!-- /contact -->
 
+	<footer class="footer">
+		<div class="container">
+
+			<div class="row align-items-center mb-3">
+				<div class="footer__logo col-lg-4 ">
+					<img src="./images/layers.png" alt="">
+				</div>
+
+				<div class="footer__title col-lg-4 ">OUR STUDIO</div>
+				<div class="footer__title col-lg-4 ">STAY IN TOUCH</div>
+			</div>
+
+			<div class="row">
+
+				<div class="footer__text col-lg-4">lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
+					nibh elit.
+					Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit</div>
+				<div class="footer__adres col-lg-4">Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta
+					Barat
+					11480 - Indonesia <p>(+62) 21-2224 3333</p>
+				</div>
+				<div class="footer__soc col-lg-4">
+					<input type="text" class="footer__soc-input">
+					<div class="footer__soc-button"></div>
+					<div class="footer__soc-icons">
+
+						<a href="#" class="facebook icon">
+						</a>
+
+						<a href="#" class="twitter icon">
+						</a>
+
+						<a href="#" class="dribbble icon">
+						</a>
+
+						<a href="#" class="instagram icon">
+						</a>
+
+						<a href="#" class="gplus icon">
+						</a>
+
+						<a href="#" class="youtube icon">
+						</a>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="footer__helpBlock col-lg-6">
+					<a href="#">HELP</a>
+					<a href="#">TERMS & CONDITION</a>
+					<a href="#">PRIVACY</a>
+				</div>
+				<div class="footer__copyright col-lg-6">Copyright © 2015 - Tajem Creative</div>
+			</div>
+
+		</div>
+	</footer>
 
 	<script src="./js/jquery-3.6.0.min.js"></script>
 	<script src="./js/bootstrap.js"></script>
