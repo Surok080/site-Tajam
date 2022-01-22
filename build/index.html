@@ -25,6 +25,7 @@
 </head>
 
 <body>
+
 	<!-- header -->
 	<header class="header">
 		<div class="container">
@@ -93,7 +94,7 @@
 				class="videoHistory__play">
 
 
-			<div class="videoHistory__title">WATCH OUR STORY</div>
+			<a href="#" class="videoHistory__title" data-toggle="modal" data-target="#exampleModal">WATCH OUR STORY</a>
 			<!-- Modal -->
 			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 				<div class="modal-dialog modal-lg modal-dialog-centered">
@@ -116,7 +117,7 @@
 	<!-- expertise -->
 	<div class="expertise">
 		<div class="container">
-			<div class="title color-dark-title">EXPERTISE</div>
+			<div class="title color-title-dark">EXPERTISE</div>
 			<div class="subtitle">Lorem ipsum dolor sit amet proin gravida nibh vel velit</div>
 			<div class="intro__line color-line-dark"></div>
 			<div class="row">
@@ -171,6 +172,63 @@
 		</div>
 	</div>
 
+	<!-- team -->
+	<div class="team">
+		<div class="container">
+			<div class="title color-title-white">MEET OUR AMAZING TEAM</div>
+			<div class="subtitle color-title-white">Lorem ipsum dolor sit amet proin gravida nibh vel velit</div>
+			<div class="intro__line color-line-dark"></div>
+
+			<div class="row justify-content-between">
+				<div class="team__item col-lg-3">
+					<a href="#" class="team__content">
+						<div class="team__photo">
+							<!-- <img src="" alt="#"> -->
+						</div>
+						<div class="team__name">SEMF UCUK</div>
+						<div class="team__position">CEO & FOUNDER</div>
+					</a>
+				</div>
+
+				<div class="team__item col-lg-3">
+					<a href="#" class="team__content">
+						<div class="team__photo">
+							<!-- <img src="" alt="#"> -->
+						</div>
+						<div class="team__name">DIK ADALIN</div>
+						<div class="team__position">ENGINEERING</div>
+					</a>
+				</div>
+
+				<div class="team__item col-lg-3">
+					<a href="#" class="team__content">
+						<div class="team__photo">
+							<!-- <img src="" alt="#"> -->
+						</div>
+						<div class="team__name">JENG KOL</div>
+						<div class="team__position">DESIGNER</div>
+					</a>
+				</div>
+				<!-- <a href=""></a> -->
+				<div class="team__item col-lg-3">
+					<a href="#" class="team__content">
+						<div class="team__photo">
+							<!-- <img src="" alt="#"> -->
+						</div>
+						<div class="team__name">PET ROMAK</div>
+						<div class="team__position">MARKETING</div>
+					</a>
+				</div>
+			</div>
+			<div class="team__joinText">Become part of our dream team, let's join us !</div>
+			<a href="#" class="button">WE ARE HIRING</a>
+		</div>
+	</div>
+
+
+
+	
+
 
 
 	<script src="./js/jquery-3.6.0.min.js"></script>
@@ -183,102 +241,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-<!-- 
-<div class="modal fade" id="video-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	<div class="modal-dialog modal-dialog-centered" role="document">
-		 <div class="modal-content">
-			  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-			  <div class="ratio ratio-16x9">
-					<div id="player"></div>
-			  </div>
-		 </div>
-	</div>
-</div> -->
-
-<!-- <style>
-	#video-modal {
-		 .btn-close {
-			  position: absolute;
-			  right: initial;
-			  left: 100%;
-			  bottom: 100%;
-			  top: initial;
-			  font-size: 20px;
-			  cursor: pointer;
-			  z-index: 10;
-			  filter: invert(1);
-			  opacity: 1;
-		 }
-
-		 .modal-dialog {
-			  max-width: 80%;
-			  margin-left: auto;
-			  margin-right: auto;
-
-			  .modal-content {
-					background: none;
-					padding: 0;
-					box-shadow: none;
-					border-radius: 0;
-					border: none;
-			  }
-		 }
-	}
-</style> -->
-
-<!-- <script>
-	var tag = document.createElement('script');
-
-	tag.src = "https://www.youtube.com/iframe_api";
-	var firstScriptTag = document.getElementsByTagName('script')[0];
-	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-	var player;
-
-
-
-	$(document).ready(function() {
-		 $('#video-modal').on('shown.bs.modal', function(e) {
-			  let button = $(e.relatedTarget),
-					video = button.data('video');
-
-			  if (player) {
-					if (player.playerInfo.videoData.video_id == video) {
-						 player.playVideo();
-					} else {
-						 player.loadVideoById(video);
-					}
-
-			  } else {
-					player = new YT.Player('player', {
-
-						 playerVars: {
-							  'controls': 0,
-							  'showinfo': 0,
-							  'rel': 0,
-							  'autoplay': 0,
-							  'playsinline': 1
-						 },
-						 videoId: video,
-						 events: {
-							  'onReady': onPlayerReady,
-						 }
-					});
-			  }
-		 });
-
-		 $('#video-modal').on('hidden.bs.modal', function() {
-			  player.pauseVideo();
-		 });
-
-		 function onPlayerReady() {
-			  player.playVideo();
-		 }
-	});
-</script> -->
