@@ -37,7 +37,7 @@
 					<img src="./images/layers.png" alt="">
 				</div>
 				<nav class="nav" id="nav">
-					<a href="#" class="nav__link">HOME</a>
+					<a href="#" class="nav__link if9">HOME</a>
 					<a href="" data-scroll="#videoHistory" class="nav__link">ABOUT</a>
 					<a href="" data-scroll="#expertise" class="nav__link">EXPERTISE</a>
 					<a href="" data-scroll="#team" class="nav__link">TEAMS</a>
@@ -99,26 +99,11 @@
 	<!-- videoHistory -->
 	<section class="videoHistory" id="videoHistory">
 		<div class="container">
-			<img src="./images/play.png" alt="#" data-toggle="modal" data-target="#exampleModal"
-				class="videoHistory__play">
-
-
-			<a href="#" class="videoHistory__title" data-toggle="modal" data-target="#exampleModal">WATCH OUR STORY</a>
-			<!-- Modal -->
-			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-				<div class="modal-dialog modal-lg modal-dialog-centered">
-					<div class="modal-content">
-
-						<div class="modal-body">
-							<iframe class="video" src="https://www.youtube.com/embed/KvUgaHTNit4" title="YouTube video player"
-								frameborder="0"
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-								allowfullscreen></iframe>
-						</div>
-
-					</div>
-				</div>
-			</div>
+			<a href="#popup" class="videoHistory__play">
+				<img src="./images/play.png">
+			</a>
+			<a href="#popup" class="videoHistory__title">WATCH OUR
+				STORY</a>
 
 		</div>
 	</section>
@@ -449,11 +434,25 @@
 		</div>
 	</footer>
 
+
+	<div id="popup" class="popup">
+		<a href="#nav" class="popup__close" id="popup__close">
+			<div class="popup__body">
+				<div id="video" class="popup__content">
+					<iframe id="youtube" class="video" src="https://www.youtube.com/embed/KvUgaHTNit4?enablejsapi=1"
+						title="YouTube video player" frameborder="0"
+						allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+				</div>
+			</div>
+		</a>
+	</div>
+
 	<script src="./js/jquery-3.6.0.min.js"></script>
 	<script src="./js/bootstrap.js"></script>
-
-
 	<script src="./js/app.js"></script>
+
+
 
 
 </body>
